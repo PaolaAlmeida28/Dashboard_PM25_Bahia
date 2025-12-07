@@ -1,11 +1,11 @@
-# --- app.R: Dashboard Shiny PM2.5 Bahia COMPLETO (FINAL ESTÁTICO) ---
+# --- app.R: Dashboard Shiny PM2.5 Bahia  ---
 
 # --- 0. Bibliotecas Necessárias ---
 library(shiny)
 library(dplyr)
 library(ggplot2)
 library(readr)
-library(plotly) # Mantemos no library, mas só é usado se usarmos renderPlotly
+library(plotly)
 library(readxl) 
 library(lubridate) 
 library(reshape2) 
@@ -409,4 +409,5 @@ server <- function(input, output) {
 }
 
 # --- 4. Execução ---
+
 shinyApp(ui = ui, server = server)
